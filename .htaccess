@@ -1,5 +1,5 @@
 Rewriteengine on
-RewriteCond $1 !^(index\.php|css|js|robots\.txt)
+RewriteCond $1 !^(index\.php|css|js|images|fonts|robots\.txt)
 RewriteRule ^(.*)$ index.php?/$1 [L]
 
 <IfModule mod_expires.c>
