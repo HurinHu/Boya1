@@ -58,12 +58,12 @@
 						<nav id="bt-menu" class="bt-menu">
 							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 							<ul>
-								<li class="current bt-icon"><a href="./">Home</a></li>
-								<li class="bt-icon"><a href="./home/about">About</a></li>
-								<li class="bt-icon"><a href="./home/services">Services</a></li>
-								<li class="bt-icon"><a href="./home/projects">Projects</a></li>
-								<li class="bt-icon"><a href="./home/blog">Blog</a></li>
-								<li class="bt-icon"><a href="./home/contacts">Contacts</a></li>
+								<li class="current bt-icon"><a href="./">首页</a></li>
+								<li class="bt-icon"><a href="./home/about">关于我们</a></li>
+								<li class="bt-icon"><a href="./home/services">服务指南</a></li>
+								<li class="bt-icon"><a href="./home/projects">案例</a></li>
+								<li class="bt-icon"><a href="./home/exams">留学考试</a></li>
+								<li class="bt-icon"><a href="./home/contacts">联系我们</a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -72,6 +72,7 @@
 				</div>
 			</div>
 		</header>
+<!--==============================header2=================================-->
 		<div class="slider_wrapper">
 			<div id="camera_wrap" class="">
 				<div data-src="./images/slide.jpg"></div>

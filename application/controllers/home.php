@@ -24,27 +24,27 @@ class Home extends CI_Controller {
 	
 	public function about()
 	{
-		$this->load->view('index-1');
+		$this->load->view('about');
 	}
 	
 	public function services()
 	{
-		$this->load->view('index-2');
+		$this->load->view('services');
 	}
 	
 	public function projects()
 	{
-		$this->load->view('index-3');
+		$this->load->view('projects');
 	}
 	
-	public function blog()
+	public function exams()
 	{
-		$this->load->view('index-4');
+		$this->load->view('exams');
 	}
 	
 	public function contacts()
 	{
-		$this->load->view('index-5');
+		$this->load->view('contacts');
 	}
 }
 
