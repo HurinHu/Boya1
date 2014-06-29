@@ -45,10 +45,10 @@
 							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 							<ul>
 								<li class="bt-icon"><a href="../">首页</a></li>
-								<li class="bt-icon"><a href="../home/about">关于我们</a></li>
-								<li class="current bt-icon"><a href="../home/services">服务指南</a></li>
+								<li class="bt-icon"><a href="../home/about">博雅简介</a></li>
+								<li class="current bt-icon"><a href="../home/services">服务内容</a></li>
 								<li class="bt-icon"><a href="../home/projects">案例</a></li>
-								<li class="bt-icon"><a href="../home/exams">留学考试</a></li>
+								<li class="bt-icon"><a href="../home/exams">团队成员</a></li>
 								<li class="bt-icon"><a href="../home/contacts">联系我们</a></li>
 							</ul>
 						</nav>
