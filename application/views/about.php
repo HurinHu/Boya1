@@ -38,7 +38,7 @@
 				<div class="grid_12">
 					<h1><a href="./"><img src="../images/logo.png" alt="Boo House"></a></h1>
 					<div class="menu_block">
-						<nav id="bt-menu" class="bt-menu">
+						<nav id="bt-menu" class="bt-menu bt-menu-open">
 							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 							<ul>
 								<li class="bt-icon"><a href="../">首页</a></li>
@@ -162,10 +162,10 @@
 		$(document).ready(function(){
 			$(".bt-menu-trigger").toggle(
 				function(){
-					$('.bt-menu').addClass('bt-menu-open');
+					$('.bt-menu').removeClass('bt-menu-open');
 				},
 				function(){
-					$('.bt-menu').removeClass('bt-menu-open');
+					$('.bt-menu').addClass('bt-menu-open');
 				}
 			);
 		});
