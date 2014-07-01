@@ -62,7 +62,7 @@
 								<li class="bt-icon"><a href="../home/about">博雅简介</a></li>
 								<li class="bt-icon"><a href="../home/services">服务内容</a></li>
 								<li class="bt-icon"><a href="../home/projects">案例</a></li>
-								<li class="bt-icon"><a href="../home/exams">团队成员</a></li>
+								<li class="bt-icon"><a href="../home/teams">团队成员</a></li>
 								<li class="current bt-icon"><a href="../home/contacts">联系我们</a></li>
 							</ul>
 						</nav>
@@ -76,7 +76,7 @@
 		<div class="content cont2"><div class="ic">More Website Templates - February 24, 2014!</div>
 			<div class="container_12">
 				<div class="grid_12">
-					<h2 class="mb0">Find Us</h2>
+					<h2 class="mb0">博雅百度地图</h2>
 				</div>
 			</div>
 		</div>
@@ -88,7 +88,7 @@
 					</div>
 				</div>
 				<div class="grid_4">
-					<h2 class="head1">Address</h2>
+					<h2 class="head1">地址</h2>
 					<div class="map">
 					<address>
 						<dl>
@@ -96,47 +96,47 @@
 								8901 Marmora Road,<br>
 								Glasgow, D04 89GR.
 							</dt>
-							<dd><span>Freephone:</span>+1 800 559 6580</dd>
-							<dd><span>Telephone:</span>+1 800 603 6035</dd>
-							<dd><span>FAX:</span>+1 800 889 9898</dd>
-							<dd><span>E-mail:</span> <a href="#" class="col3">mail@demolink.org</a></dd>
-							<dd><span>Skype:</span> <a href="#" class="col3">@skypename</a></dd>
+							<dd><span>QQ群</span>212946015</dd>
+							<dd><span>联系电话:</span>153-7258-0366</dd>
+							<dd><span>微信平台:</span>boyaedu123</dd>
+							<dd><span>E-mail:</span>boyaedu@gmail.com</dd>
+							<dd><span>微博:</span>香港博雅教育咨询公司</dd>
 						</dl>
 					</address>
 					<p>24/7 support is available for all <span class="col3"><a href="#" rel="nofollow">premium</a></span> products from Free stuff goes without it.</p>
-					Have any questions about customization of a free template.</div>
+				  </div>
 				</div>
 				<div class="grid_8">
-					<h2 class="head1">Contact Form</h2>
+					<h2 class="head1">联系表单</h2>
 					<form id="form">
 						<div class="success_wrapper">
-							<div class="success-message">Contact form submitted</div>
+							<div class="success-message">发送成功</div>
 						</div>
 						<label class="name">
-							<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
-							<span class="empty-message">*This field is required.</span>
-							<span class="error-message">*This is not a valid name.</span>
+							<input type="text" placeholder="姓名:" data-constraints="@Required @JustLetters" />
+							<span class="empty-message">*此字段必填</span>
+							<span class="error-message">*非法姓名</span>
 						</label>
 						<label class="email">
 							<input type="text" placeholder="E-mail:" data-constraints="@Required @Email" />
-							<span class="empty-message">*This field is required.</span>
-							<span class="error-message">*This is not a valid email.</span>
+							<span class="empty-message">*此字段必填</span>
+							<span class="error-message">*非法邮件地址</span>
 						</label>
 						<label class="phone">
-							<input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/>
-							<span class="empty-message">*This field is required.</span>
-							<span class="error-message">*This is not a valid phone.</span>
+							<input type="text" placeholder="电话:" data-constraints="@Required @JustNumbers"/>
+							<span class="empty-message">*此字段必填</span>
+							<span class="error-message">*非法电话号码</span>
 						</label>
 						<label class="message">
-							<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-							<span class="empty-message">*This field is required.</span>
-							<span class="error-message">*The message is too short.</span>
+							<textarea placeholder="内容:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+							<span class="empty-message">*此字段必填</span>
+							<span class="error-message">*内容不够哟，亲!</span>
 						</label>
 						<div>
 							<div class="clear"></div>
 							<div class="btns">
-								<a href="#" data-type="reset" class="btn">clear</a>
-								<a href="#" data-type="submit" class="btn">send</a>
+								<a href="#" data-type="reset" class="btn">清除内容</a>
+								<a href="#" data-type="submit" class="btn">发送</a>
 							</div>
 						</div>
 					</form>

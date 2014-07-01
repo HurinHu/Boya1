@@ -26,6 +26,7 @@
 			</a>
 		</div>
 		<![endif]-->
+		
 		<!--[if lt IE 9]>
 		<script src="../js/html5shiv.js"></script>
 		<link rel="stylesheet" media="screen" href="../css/ie.css">
@@ -48,7 +49,7 @@
 								<li class="bt-icon"><a href="../home/about">博雅简介</a></li>
 								<li class="current bt-icon"><a href="../home/services">服务内容</a></li>
 								<li class="bt-icon"><a href="../home/projects">案例</a></li>
-								<li class="bt-icon"><a href="../home/exams">团队成员</a></li>
+								<li class="bt-icon"><a href="../home/teams">团队成员</a></li>
 								<li class="bt-icon"><a href="../home/contacts">联系我们</a></li>
 							</ul>
 						</nav>
@@ -62,7 +63,7 @@
 		<div class="content cont1"><div class="ic">More Website Templates - February 24, 2014!</div>
 			<div class="container_12">
 				<div class="grid_12">
-					<h2 class="mb0">Our Services</h2>
+					<h2 class="mb0">我们的服务</h2>
 				</div>
 			</div>
 		</div>
@@ -71,135 +72,30 @@
 				<div class="grid_12">
 					<div class="responsive">
 						<ul class="a_content">
-<!-- 1 -->
+							<?php foreach ($all_Content as $items):?>
 							<li>
 								<div class="card-front">
-									<div class="text2">Investment Solutions</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
+									<div class="text2">
+                						<?php echo $items->title ?>
+									</div>
+									<p>
+										<?php echo $items->short_content ?>
+            						</p>
+            					</div>
 								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
+									<h2><a href="#">点击查看更多</a></h2>
 								</div>
 								<!-- Content -->
 								<div class="all-content">
-									<div class="text2">Investment Solutions</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
+									<div class="text2">
+                						<?php echo $items->title ?>
+									</div>
+									<p>
+										<?php echo $items->full_content ?>
+            						</p>
 								</div>
 							</li>
-							<li>
-								<div class="card-front">
-									<div class="text2">Outsourcing Programs</div>
-									<p>Demollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quisy</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Outsourcing Programs</div>
-									<p>Demollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quisy</p>
-								</div>
-							</li>
-							<li>
-								<div class="card-front">
-									<div class="text2">Marketing Research</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Marketing Research</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-							</li>
-<!-- 2 -->
-							<li>
-								<div class="card-front">
-									<div class="text2">Partnership Programs</div>
-									<p>Komollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, alesuada nibh</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Partnership Programs</div>
-									<p>Komollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, alesuada nibh</p>
-								</div>
-							</li>
-							<li>
-								<div class="card-front">
-									<div class="text2">Money Saving Ideas</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Money Saving Ideas</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-							</li>
-							<li>
-								<div class="card-front">
-									<div class="text2">Risk Management</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Risk Management</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-							</li>
-<!-- 3 -->
-							<li>
-								<div class="card-front">
-									<div class="text2">Business Analysis</div>
-									<p>Olerat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuad</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Business Analysis</div>
-									<p>Olerat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuad</p>
-								</div>
-							</li>
-							<li>
-								<div class="card-front">
-									<div class="text2">Insurance Services</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Insurance Services</div>
-									<p>In mollis erat matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis</p>
-								</div>
-							</li>
-							<li class="last">
-								<div class="card-front">
-									<div class="text2">Expert Business Plans</div>
-									<p>Matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh</p>
-								</div>
-								<div class="card-back">
-									<h2><a href="#">Click here</a></h2>
-								</div>
-								<!-- Content -->
-								<div class="all-content">
-									<div class="text2">Expert Business Plans</div>
-									<p>Matt nequemer rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh</p>
-								</div>
-							</li>
+						 <?php endforeach ?>
 						</ul>
 					</div>
 				</div>

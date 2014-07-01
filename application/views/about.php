@@ -45,7 +45,7 @@
 								<li class="current bt-icon"><a href="../home/about">博雅简介</a></li>
 								<li class="bt-icon"><a href="../home/services">服务内容</a></li>
 								<li class="bt-icon"><a href="../home/projects">案例</a></li>
-								<li class="bt-icon"><a href="../home/exams">团队成员</a></li>
+								<li class="bt-icon"><a href="../home/teams">团队成员</a></li>
 								<li class="bt-icon"><a href="../home/contacts">联系我们</a></li>
 							</ul>
 						</nav>
@@ -59,7 +59,7 @@
 		<div class="content"><div class="ic">More Website Templates - February 24, 2014!</div>
 			<div class="container_12">
 				<div class="grid_4">
-					<h2>Who We Are</h2>
+					<h2>关于我们</h2>
 					<img src="../images/page2_img.jpg" alt="" class="img_inner">
 					<div class="text1 col2"><a href="#">Hom dui erosi laoru adipiscingq id risus sagittis, non consequat feiter milyno</a></div>
 					<p>In mollis erat mattisy neque facilisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus.</p>
@@ -67,7 +67,7 @@
 					<a href="#" class="btn">more</a>
 				</div>
 				<div class="grid_4">
-					<h2>Our History</h2>
+					<h2>我们的点滴</h2>
 					<ul class="list1">
 						<li>
 							<time datetime="2014-01-01">1998 -</time>
@@ -92,7 +92,7 @@
 					</ul>
 				</div>
 				<div class="grid_4">
-					<h2>Opportunities</h2>
+					<h2>我们的理念</h2>
 					<div class="text1 col2"><a href="#">Hom dui erosi laoru adipiscingq id risus sagittis, non consequat feiter milyno</a></div>
 					<p>In mollis erat mattisy neque facilisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus</p>
 					Ggestas venenatis. Duis massa elit, auctor pellentesque vel, aliquet sit amet eratertolo. Phasellus accumsan justo vitae feugiat

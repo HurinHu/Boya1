@@ -62,7 +62,7 @@
 								<li class="bt-icon"><a href="./home/about">博雅简介</a></li>
 								<li class="bt-icon"><a href="./home/services">服务内容</a></li>
 								<li class="bt-icon"><a href="./home/projects">案例</a></li>
-								<li class="bt-icon"><a href="./home/exams">团队成员</a></li>
+								<li class="bt-icon"><a href="./home/teams">团队成员</a></li>
 								<li class="bt-icon"><a href="./home/contacts">联系我们</a></li>
 							</ul>
 						</nav>
@@ -83,8 +83,8 @@
 		<div class="container_12">
 			<div class="grid_12">
 				<div class="slogan">
-					Our Ideas Will Raise Your Business Above the Expected <br>
-					<a href="#" class="btn">more</a>
+					我们将点亮你的生活! <br>
+					<a href="#" class="btn">更多</a>
 				</div>
 			</div>
 		</div>
@@ -94,47 +94,47 @@
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-						<div class="title">Consulting</div>
+						<div class="title">服务内容</div>
 						</figcaption>
 					</figure>
-					<span>more</span>
+					<span>更多</span>
 				</a>
 				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-							<div class="title">Development</div>
+							<div class="title">成功案例</div>
 						</figcaption>
 					</figure>
-					<span>more</span>
+					<span>更多</span>
 				</a>
 				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-						<div class="title">Analysis</div>
+						<div class="title">博雅团队</div>
 						</figcaption>
 					</figure>
-					<span>more</span>
+					<span>更多</span>
 				</a>
 				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-						<div class="title">Integration</div>
+						<div class="title">联系我们</div>
 						</figcaption>
 					</figure>
-					<span>more</span>
+					<span>更多</span>
 				</a>
 			</section>
 		</div>
 <!--==============================Content=================================-->
-		<div class="content"><div class="ic">More Website Templates - February 24, 2014!</div>
+		<div class="content">
 			<div class="container_12">
 				<div class="grid_6">
 					<img src="./images/page1_img1.jpg" alt="" class="img_inner fleft">
 					<div class="extra_wrapper">
-						<div class="title1">We Work for You!</div>
+						<div class="title1">为你定制的团队!</div>
 						<p>If you want to download this <span class="col3"><a href="#" rel="dofollow">freebie</a></span>, visit Our blog.</p>
 						Want to find more themes of this kind? Go to <span class="col3"><a href="#" rel="nofollow">Business and Services</a></span> website templates.
 					</div>
