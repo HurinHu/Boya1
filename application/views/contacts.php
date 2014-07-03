@@ -23,13 +23,11 @@
 
 		<!--引用百度地图API-->
 		<style type="text/css">
-		html,body{margin:0;padding:0;}
-		.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-    	.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+   	 	html,body{margin:0;padding:0;}
+    		.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    		.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 		</style>
 		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-
-
 
 
 
@@ -92,9 +90,9 @@
 					<div class="map">
 					<address>
 						<dl>
-							<dt>The Company Name Inc. <br>
-								8901 Marmora Road,<br>
-								Glasgow, D04 89GR.
+							<dt>香港特别行政区九龙旺角道<br>
+								33号凯途发展大厦<br>
+								7楼04室
 							</dt>
 							<dd><span>QQ群</span>212946015</dd>
 							<dd><span>联系电话:</span>153-7258-0366</dd>
@@ -184,7 +182,7 @@
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(113.960423,22.546036);//定义一个中心点坐标
+        var point = new BMap.Point(114.17979,22.323533);//定义一个中心点坐标
         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
@@ -211,7 +209,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"博雅留学",content:"电话：0756-3620002<br/>手机：13631240988",point:"113.95957|22.545151",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+    var markerArr = [{title:"博雅留学",content:"手机：18969021266<br/>微信：boyaedu123",point:"114.180625|22.322981",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ];
     //创建marker
     function addMarker(){
