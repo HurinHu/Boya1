@@ -21,14 +21,40 @@ class Home extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('download');
+		$this->load->library('email');
+		$this->load->helper('form');
+		$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 4); 
+			if(isset($_COOKIE['lang'])){
+				if($_COOKIE['lang']=="zh"){
+					$this->lang->load('home','chinese');
+				}else if($_COOKIE['lang']=="en"){
+					$this->lang->load('home','english');
+				}
+			}else if (preg_match("/zh/i", $lang)) {
+				$this->lang->load('home','chinese');
+				setcookie("lang","zh", time()+3600*24*7*31,"/","localhost");
+			}else{
+				$this->lang->load('home','english');
+				setcookie("lang","en", time()+3600*24*7*31,"/","localhost");
+			}
     	$this->load->model('Service_Model');
+    	$this->load->model('Contact_Model');
   	}
   	
 
-
 	public function index()
 	{
-		$this->load->view('home');
+		$data['title']=$this->lang->line('title');
+		$data['home']=$this->lang->line('home');
+		$data['introduction']=$this->lang->line('introduction');
+		$data['service']=$this->lang->line('service');
+		$data['example']=$this->lang->line('example');
+		$data['member']=$this->lang->line('member');
+		$data['contact']=$this->lang->line('contact');
+		$data['content1']=$this->lang->line('content1');
+		$data['content2']=$this->lang->line('content2');
+		$data['morebtn']=$this->lang->line('morebtn');
+		$this->load->view('home',$data);
 	}
 	
 	public function about()
@@ -54,6 +80,17 @@ class Home extends CI_Controller {
 	
 	public function contacts()
 	{
+		$data['success'] = "121212";
+		$this->load->view('contacts',$data);
+	}
+
+	public function contact_info(){
+		$name = $this->input->post('name');
+		$email = $this->input->post('email');
+		$phone = $this->input->post('phone');
+		$content = $this->input->post('message');
+
+		$this->Contact_Model->insert_user_questions($name,$email,$phone,$content);
 		$this->load->view('contacts');
 	}
 

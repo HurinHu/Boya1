@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Home</title>
+		<title><?=$title;?></title>
 		<link rel="icon" href="./images/favicon.ico">
 		<link rel="shortcut icon" href="./images/favicon.ico">
 		<link rel="stylesheet" href="./css/camera.css">
@@ -56,14 +56,14 @@
 					<h1><a href="./"><img src="./images/logo.png" alt="Boo House"></a></h1>
 					<div class="menu_block">
 						<nav id="bt-menu" class="bt-menu bt-menu-open">
-							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+							<a href="#" class="bt-menu-trigger"><span></span></a>
 							<ul>
-								<li class="current bt-icon"><a href="./">首页</a></li>
-								<li class="bt-icon"><a href="./home/about">博雅简介</a></li>
-								<li class="bt-icon"><a href="./home/services">服务内容</a></li>
-								<li class="bt-icon"><a href="./home/projects">案例</a></li>
-								<li class="bt-icon"><a href="./home/teams">团队成员</a></li>
-								<li class="bt-icon"><a href="./home/contacts">联系我们</a></li>
+								<li class="current bt-icon"><a href="./"><?=$home;?></a></li>
+								<li class="bt-icon"><a href="./home/about"><?=$introduction;?></a></li>
+								<li class="bt-icon"><a href="./home/services"><?=$service;?></a></li>
+								<li class="bt-icon"><a href="./home/projects"><?=$example;?></a></li>
+								<li class="bt-icon"><a href="./home/teams"><?=$member;?></a></li>
+								<li class="bt-icon"><a href="./home/contacts"><?=$contact;?></a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -83,48 +83,48 @@
 		<div class="container_12">
 			<div class="grid_12">
 				<div class="slogan">
-					我们将点亮你的生活! <br>
-					<a href="#" class="btn">更多</a>
+					<?=$content1;?><br>
+					<a href="./home/about" class="btn"><?=$morebtn;?></a>
 				</div>
 			</div>
 		</div>
 		<div class="container_12">
 			<section class="grid" id="grid">
-				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
+				<a href="./home/services" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-						<div class="title">服务内容</div>
+						<div class="title"><?=$service;?></div>
 						</figcaption>
 					</figure>
-					<span>更多</span>
+					<span><?=$morebtn;?></span>
 				</a>
-				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
+				<a href="./home/priojects" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-							<div class="title">成功案例</div>
+							<div class="title"><?=$example;?></div>
 						</figcaption>
 					</figure>
-					<span>更多</span>
+					<span><?=$morebtn;?></span>
 				</a>
-				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
+				<a href="./home/teams" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-						<div class="title">博雅团队</div>
+						<div class="title"><?=$member;?></div>
 						</figcaption>
 					</figure>
-					<span>更多</span>
+					<span><?=$morebtn;?></span>
 				</a>
-				<a href="#" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
+				<a href="./home/contacts" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>
-						<div class="title">联系我们</div>
+						<div class="title"><?=$contact;?></div>
 						</figcaption>
 					</figure>
-					<span>更多</span>
+					<span><?=$morebtn;?></span>
 				</a>
 			</section>
 		</div>
@@ -134,7 +134,7 @@
 				<div class="grid_6">
 					<img src="./images/page1_img1.jpg" alt="" class="img_inner fleft">
 					<div class="extra_wrapper">
-						<div class="title1">为你定制的团队!</div>
+						<div class="title1"><?=$content2;?></div>
 						<p>If you want to download this <span class="col3"><a href="#" rel="dofollow">freebie</a></span>, visit Our blog.</p>
 						Want to find more themes of this kind? Go to <span class="col3"><a href="#" rel="nofollow">Business and Services</a></span> website templates.
 					</div>

@@ -111,24 +111,24 @@
 							<div class="success-message">发送成功</div>
 						</div>
 						<label class="name">
-							<input type="text" placeholder="姓名:" data-constraints="@Required @JustLetters" />
+							<input type="text" name="username" placeholder="姓名:" data-constraints="@Required" />
 							<span class="empty-message">*此字段必填</span>
 							<span class="error-message">*非法姓名</span>
 						</label>
 						<label class="email">
-							<input type="text" placeholder="E-mail:" data-constraints="@Required @Email" />
+							<input type="text" name="email" placeholder="E-mail:" data-constraints="@Required @Email" />
 							<span class="empty-message">*此字段必填</span>
 							<span class="error-message">*非法邮件地址</span>
 						</label>
 						<label class="phone">
-							<input type="text" placeholder="电话:" data-constraints="@Required @JustNumbers"/>
+							<input type="text" name="phone" placeholder="电话:" data-constraints="@Required @JustNumbers"/>
 							<span class="empty-message">*此字段必填</span>
 							<span class="error-message">*非法电话号码</span>
 						</label>
 						<label class="message">
-							<textarea placeholder="内容:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+							<textarea placeholder="内容:" name="content" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
 							<span class="empty-message">*此字段必填</span>
-							<span class="error-message">*内容不够哟，亲!</span>
+							<span class="error-message">*内容不够哟，至少20个字符~</span>
 						</label>
 						<div>
 							<div class="clear"></div>

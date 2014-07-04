@@ -1,0 +1,12 @@
+<?php
+$lang['title']="欢迎访问博雅教育";
+$lang['home']="首页";
+$lang['introduction']="博雅介绍";
+$lang['service']="服务内容";
+$lang['example']="案例";
+$lang['member']="团队成员";
+$lang['contact']="联系我们";
+$lang['content1']="我们将点亮你的生活!";
+$lang['content2']="为你定制的团队!";
+$lang['morebtn']="更多";
+?>

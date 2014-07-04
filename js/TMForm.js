@@ -11,7 +11,7 @@
 					,invalidClass:'invalid'
 					,successClass:'success'
 					,onceVerifiedClass:'once-verified'
-					,mailHandlerURL:'bat/MailHandler.php'					
+					,mailHandlerURL:'../home/contact_info'					
 					,successShowDelay:'4000'
 					,stripHTML:true
 				},opt)
