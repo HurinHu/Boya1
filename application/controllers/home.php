@@ -23,20 +23,6 @@ class Home extends CI_Controller {
 		$this->load->helper('download');
 		$this->load->library('email');
 		$this->load->helper('form');
-		$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 4); 
-			if(isset($_COOKIE['lang'])){
-				if($_COOKIE['lang']=="zh"){
-					$this->lang->load('home','chinese');
-				}else if($_COOKIE['lang']=="en"){
-					$this->lang->load('home','english');
-				}
-			}else if (preg_match("/zh/i", $lang)) {
-				$this->lang->load('home','chinese');
-				setcookie("lang","zh", time()+3600*24*7*31,"/","localhost");
-			}else{
-				$this->lang->load('home','english');
-				setcookie("lang","en", time()+3600*24*7*31,"/","localhost");
-			}
     	$this->load->model('Service_Model');
     	$this->load->model('Contact_Model');
   	}
@@ -44,6 +30,28 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
+		$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 4); 
+			if(isset($_COOKIE['lang'])){
+				if($_COOKIE['lang']=="zh"){
+					$this->lang->load('home','chinese');
+					$data['lang']="en";
+					$data['language']="<a href=\"#\" id=\"lang\" value=\"en\">英文</a>";
+				}else if($_COOKIE['lang']=="en"){
+					$this->lang->load('home','english');
+					$data['lang']="zh";
+					$data['language']="<a href=\"#\" id=\"lang\" value=\"zh\">中文</a>";
+				}
+			}else if (preg_match("/zh/i", $lang)) {
+				$this->lang->load('home','chinese');
+				setcookie("lang","zh", time()+3600*24*7*31,"/","localhost");
+				$data['lang']="en";
+				$data['language']="<a href=\"#\" id=\"lang\" value=\"en\">英文</a>";
+			}else{
+				$this->lang->load('home','english');
+				setcookie("lang","en", time()+3600*24*7*31,"/","localhost");
+				$data['lang']="zh";
+				$data['language']="<a href=\"#\" id=\"lang\" value=\"zh\">中文</a>";
+			}
 		$data['title']=$this->lang->line('title');
 		$data['home']=$this->lang->line('home');
 		$data['introduction']=$this->lang->line('introduction');

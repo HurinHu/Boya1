@@ -19,7 +19,18 @@
 		<script src="./js/jquery.mobile.customized.min.js"></script>
 		<!--<![endif]-->
 		<script>
+		function setCookie(name,value){
+				var Days = 30;
+				var exp = new Date();   
+				exp.setTime(exp.getTime() + 3600*24*7*31);
+				document.cookie = name + "="+ escape (value) + ";domain=localhost;expires=" + exp.toGMTString();
+			}
 		$(document).ready(function(){
+			$('a#lang').click(function(){
+					setCookie('lang','<?=$lang;?>');
+					location.reload();
+				});
+
 			jQuery('#camera_wrap').camera({
 			loader: false,
 			pagination: true ,
@@ -51,6 +62,7 @@
 	<body class="page1">
 <!--==============================header=================================-->
 		<header>
+			<?=$language;?>
 			<div class="container_12">
 				<div class="grid_12">
 					<h1><a href="./"><img src="./images/logo.png" alt="Boo House"></a></h1>
@@ -99,7 +111,7 @@
 					</figure>
 					<span><?=$morebtn;?></span>
 				</a>
-				<a href="./home/priojects" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
+				<a href="./home/projects" data-path-hover="m 180,70.57627 -180,0 L 0,0 180,0 z">
 					<figure>
 						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,262 0,0 180,0 z"/></svg>
 						<figcaption>

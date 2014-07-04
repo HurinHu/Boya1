@@ -724,3 +724,7 @@ footer a:hover {
     background-position: right 0;
     outline: medium none;
 }
+#lang{
+	float:right;
+	margin-right:2em;
+}
