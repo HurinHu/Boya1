@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>About</title>
+		<title><?=$title;?></title>
 		<link rel="icon" href="../images/favicon.ico">
 		<link rel="shortcut icon" href="../images/favicon.ico">
 		<link rel="stylesheet" href="../css/style.css">
@@ -12,7 +12,17 @@
 		<script src="../js/jquery.ui.totop.js"></script>
 		<script src="../js/jquery.easing.1.3.js"></script>
 		<script>
+		function setCookie(name,value){
+				var Days = 30;
+				var exp = new Date();   
+				exp.setTime(exp.getTime() + 3600*24*7*31);
+				document.cookie = name + "="+ escape (value) + ";domain=localhost;expires=" + exp.toGMTString();
+			}
 		$(document).ready(function(){
+			$('a#lang').click(function(){
+					setCookie('lang','<?=$lang;?>');
+					location.reload();
+				});
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		})
 		</script>
@@ -34,19 +44,20 @@
 	<body class="pt0">
 <!--==============================header=================================-->
 		<header>
+			<?=$language;?>
 			<div class="container_12">
 				<div class="grid_12">
 					<h1><a href="./"><img src="../images/logo.png" alt="Boo House"></a></h1>
 					<div class="menu_block">
 						<nav id="bt-menu" class="bt-menu bt-menu-open">
-							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+							<a href="#" class="bt-menu-trigger"><span></span></a>
 							<ul>
-								<li class="bt-icon"><a href="../">首页</a></li>
-								<li class="current bt-icon"><a href="../home/about">博雅简介</a></li>
-								<li class="bt-icon"><a href="../home/services">服务内容</a></li>
-								<li class="bt-icon"><a href="../home/projects">案例</a></li>
-								<li class="bt-icon"><a href="../home/teams">团队成员</a></li>
-								<li class="bt-icon"><a href="../home/contacts">联系我们</a></li>
+								<li class="bt-icon"><a href="../"><?=$home;?></a></li>
+								<li class="current bt-icon"><a href="../home/about"><?=$introduction;?></a></li>
+								<li class="bt-icon"><a href="./home/services"><?=$service;?></a></li>
+								<li class="bt-icon"><a href="./home/projects"><?=$example;?></a></li>
+								<li class="bt-icon"><a href="./home/teams"><?=$member;?></a></li>
+								<li class="bt-icon"><a href="./home/contacts"><?=$contact;?></a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -59,7 +70,7 @@
 		<div class="content"><div class="ic">More Website Templates - February 24, 2014!</div>
 			<div class="container_12">
 				<div class="grid_4">
-					<h2>关于我们</h2>
+					<h2><?=$title1;?></h2>
 					<img src="../images/page2_img.jpg" alt="" class="img_inner">
 					<div class="text1 col2"><a href="#">Hom dui erosi laoru adipiscingq id risus sagittis, non consequat feiter milyno</a></div>
 					<p>In mollis erat mattisy neque facilisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus.</p>
@@ -67,7 +78,7 @@
 					<a href="#" class="btn">more</a>
 				</div>
 				<div class="grid_4">
-					<h2>我们的点滴</h2>
+					<h2><?=$title2;?></h2>
 					<ul class="list1">
 						<li>
 							<time datetime="2014-01-01">1998 -</time>
@@ -92,7 +103,7 @@
 					</ul>
 				</div>
 				<div class="grid_4">
-					<h2>我们的理念</h2>
+					<h2><?=$title3;?></h2>
 					<div class="text1 col2"><a href="#">Hom dui erosi laoru adipiscingq id risus sagittis, non consequat feiter milyno</a></div>
 					<p>In mollis erat mattisy neque facilisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus</p>
 					Ggestas venenatis. Duis massa elit, auctor pellentesque vel, aliquet sit amet eratertolo. Phasellus accumsan justo vitae feugiat

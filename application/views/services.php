@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Services</title>
+		<title><?=$title;?></title>
 		<link rel="icon" href="../images/favicon.ico">
 		<link rel="shortcut icon" href="../images/favicon.ico">
 		<link rel="stylesheet" href="../css/list.css">
@@ -15,7 +15,18 @@
 		<script src="../js/jquery.easing.1.3.js"></script>
 		<script src="../js/m.js"></script>
 		<script>
+		function setCookie(name,value){
+				var Days = 30;
+				var exp = new Date();   
+				exp.setTime(exp.getTime() + 3600*24*7*31);
+				document.cookie = name + "="+ escape (value) + ";domain=localhost;expires=" + exp.toGMTString();
+			}
 		$(document).ready(function(){
+			$('a#lang').click(function(){
+					setCookie('lang','<?=$lang;?>');
+					location.reload();
+				});
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		})
 		</script>
@@ -38,19 +49,20 @@
 	<body class="">
 <!--==============================header=================================-->
 		<header>
+			<?=$language;?>
 			<div class="container_12">
 				<div class="grid_12">
 					<h1><a href="./"><img src="../images/logo.png" alt="Boo House"></a></h1>
 					<div class="menu_block">
 						<nav id="bt-menu" class="bt-menu bt-menu-open">
-							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+							<a href="#" class="bt-menu-trigger"><span></span></a>
 							<ul>
-								<li class="bt-icon"><a href="../">首页</a></li>
-								<li class="bt-icon"><a href="../home/about">博雅简介</a></li>
-								<li class="current bt-icon"><a href="../home/services">服务内容</a></li>
-								<li class="bt-icon"><a href="../home/projects">案例</a></li>
-								<li class="bt-icon"><a href="../home/teams">团队成员</a></li>
-								<li class="bt-icon"><a href="../home/contacts">联系我们</a></li>
+								<li class="bt-icon"><a href="../"><?=$home;?></a></li>
+								<li class="bt-icon"><a href="../home/about"><?=$introduction;?></a></li>
+								<li class="current bt-icon"><a href="../home/services"><?=$service;?></a></li>
+								<li class="bt-icon"><a href="./home/projects"><?=$example;?></a></li>
+								<li class="bt-icon"><a href="./home/teams"><?=$member;?></a></li>
+								<li class="bt-icon"><a href="./home/contacts"><?=$contact;?></a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -60,10 +72,10 @@
 			</div>
 		</header>
 <!--==============================Content=================================-->
-		<div class="content cont1"><div class="ic">More Website Templates - February 24, 2014!</div>
+		<div class="content cont1">
 			<div class="container_12">
 				<div class="grid_12">
-					<h2 class="mb0">我们的服务</h2>
+					<h2 class="mb0"><?=$title1;?></h2>
 				</div>
 			</div>
 		</div>
@@ -83,7 +95,7 @@
             						</p>
             					</div>
 								<div class="card-back">
-									<h2><a href="#">点击查看更多</a></h2>
+									<h2><a href="#"><?=$more;?></a></h2>
 								</div>
 								<!-- Content -->
 								<div class="all-content">

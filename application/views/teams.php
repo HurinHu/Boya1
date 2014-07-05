@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Blog</title>
+		<title><?=$title;?></title>
 		<link rel="icon" href="../images/favicon.ico">
 		<link rel="shortcut icon" href="../images/favicon.ico">
 		<link rel="stylesheet" href="../css/style.css">
@@ -13,7 +13,17 @@
 		<script src="../js/jquery.easing.1.3.js"></script>
 		<script src="../js/touchTouch.jquery.js"></script>	
 		<script>
+		function setCookie(name,value){
+				var Days = 30;
+				var exp = new Date();   
+				exp.setTime(exp.getTime() + 3600*24*7*31);
+				document.cookie = name + "="+ escape (value) + ";domain=localhost;expires=" + exp.toGMTString();
+			}
 		$(document).ready(function(){
+			$('a#lang').click(function(){
+					setCookie('lang','<?=$lang;?>');
+					location.reload();
+				});
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			$('.gallery a.gal').touchTouch();
 		})
@@ -36,19 +46,20 @@
 	<body class="">
 <!--==============================header=================================-->
 		<header>
+			<?=$language;?>
 			<div class="container_12">
 				<div class="grid_12">
 					<h1><a href="./"><img src="../images/logo.png" alt="Boo House"></a></h1>
 					<div class="menu_block">
 						<nav id="bt-menu" class="bt-menu bt-menu-open">
-							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+							<a href="#" class="bt-menu-trigger"><span></span></a>
 							<ul>
-								<li class="bt-icon"><a href="../">首页</a></li>
-								<li class="bt-icon"><a href="../home/about">博雅简介</a></li>
-								<li class="bt-icon"><a href="../home/services">服务内容</a></li>
-								<li class="bt-icon"><a href="../home/projects">案例</a></li>
-								<li class="current bt-icon"><a href="../home/teams">团队成员</a></li>
-								<li class="bt-icon"><a href="../home/contacts">联系我们</a></li>
+								<li class="bt-icon"><a href="../"><?=$home;?></a></li>
+								<li class="bt-icon"><a href="../home/about"><?=$introduction;?></a></li>
+								<li class="bt-icon"><a href="../home/services"><?=$service;?></a></li>
+								<li class="bt-icon"><a href="../home/projects"><?=$example;?></a></li>
+								<li class="current bt-icon"><a href="../home/teams"><?=$member;?></a></li>
+								<li class="bt-icon"><a href="../home/contacts"><?=$contact;?></a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -58,10 +69,10 @@
 			</div>
 		</header>
 <!--==============================Content=================================-->
-		<div class="content cont2"><div class="ic">More Website Templates - February 24, 2014!</div>
+		<div class="content cont2">
 			<div class="container_12">
 				<div class="grid_12">
-					<h2 class="mb0">我们的团队</h2>
+					<h2 class="mb0"><?=$title1;?></h2>
 				</div>
 			</div>
 		</div>
@@ -73,10 +84,10 @@
 						<div class="extra_wrapper">
 							<div class="text1">
 							<a href="#">Julie Peng</a>
-							<time class="col2" datetime="2014-01-01">文案,咨询</time>
-							</div>博雅教育热忱欢迎各位同学、家长前来咨询。我们将以最专业、负责的态度，真诚为你服务！
+							<time class="col2" datetime="2014-01-01"><?=$position1;?></time>
+							</div><?=$intro1;?>
 							<br>
-							<a href="#" class="btn">查看更多</a>
+							<a href="#" class="btn"><?=$more;?></a>
 						</div>
 					</div>
 					<div class="blog bd1">
@@ -84,10 +95,10 @@
 						<div class="extra_wrapper">
 							<div class="text1">
 							<a href="#">Dream Fu</a>
-							<time class="col2" datetime="2014-01-01">文案</time>
-							</div>博雅教育热忱欢迎各位同学、家长前来咨询。我们将以最专业、负责的态度，真诚为你服务！
+							<time class="col2" datetime="2014-01-01"><?=$position2;?></time>
+							</div><?=$intro2;?>
 							<br>
-							<a href="#" class="btn">查看更多</a>
+							<a href="#" class="btn"><?=$more;?></a>
 						</div>
 					</div>
 					<div class="blog bd2">
@@ -95,31 +106,31 @@
 						<div class="extra_wrapper">
 							<div class="text1">
 							<a href="#">Stella Zhang</a>
-							<time class="col2" datetime="2014-01-01">文案,咨询</time>
-							</div>博雅教育热忱欢迎各位同学、家长前来咨询。我们将以最专业、负责的态度，真诚为你服务！
+							<time class="col2" datetime="2014-01-01"><?=$position3;?></time>
+							</div><?=$intro3;?>
 							<br>
-							<a href="#" class="btn">查看更多</a>
+							<a href="#" class="btn"><?=$more;?></a>
 						</div>
 					</div>
 				</div>
 				<div class="grid_4">
-					<div class="text1 col3 head1">其他成员:</div>
+					<div class="text1 col3 head1"><?=$other;?></div>
 					<ul class="list l1">
-						<li><a href="#">Ted Shao   美国麻省理工学院金融学硕士</a></li>
-						<li><a href="#">Mia Zheng  美国约翰霍普金斯大学硕士</a></li>
-						<li><a href="#">Ronald Yuan 伦敦政治经济学院硕士</a></li>
-						<li><a href="#">Vivian Zhang 英国华威大学商学院硕士</a></li>
-						<li><a href="#">Amelia Cui 香港大学硕士</a></li>
+						<li><a href="#"><?=$li1;?></a></li>
+						<li><a href="#"><?=$li2;?></a></li>
+						<li><a href="#"><?=$li3;?></a></li>
+						<li><a href="#"><?=$li4;?></a></li>
+						<li><a href="#"><?=$li5;?></a></li>
 					</ul>
 					<ul class="list l1">
-						<li><a href="#">Scarlett Huang 香港科技大学硕士</a></li>
-						<li><a href="#">Sherry Zhu 英国杜伦大学硕士</a></li>
-						<li><a href="#">Cynthia Duan 英国爱丁堡大学硕士</a></li>
-						<li><a href="#">Kathy Zhang  香港城市大学硕士</a></li>
-						<li><a href="#">Jessie Jie 伦敦大学学院硕士</a></li>
+						<li><a href="#"><?=$li6;?></a></li>
+						<li><a href="#"><?=$li7;?></a></li>
+						<li><a href="#"><?=$li8;?></a></li>
+						<li><a href="#"><?=$li9;?></a></li>
+						<li><a href="#"><?=$li10;?></a></li>
 					</ul>
 					<div class="text1 head1 col3">
-						最新招聘:
+						<?=$join;?>
 					</div>
 					<div class="post">
 						<div class="fl">
@@ -127,7 +138,7 @@
 							<time datetime="2014-01-01">2014-01-24</time>
 						</div>
 						<div class="extra_wrapper">
-							<a href="#">博雅教育广纳人才，我们对有能力、有热情加入的UICer始终保持开放和欢迎的态度，联系方式详见博雅教育官网“联系我们”版块。</a>
+							<a href="#"><?=$joinintro;?></a>
 						</div>
 					</div>
 				</div>
