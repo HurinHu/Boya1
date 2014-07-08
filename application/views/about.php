@@ -54,10 +54,10 @@
 							<ul>
 								<li class="bt-icon"><a href="../"><?=$home;?></a></li>
 								<li class="current bt-icon"><a href="../home/about"><?=$introduction;?></a></li>
-								<li class="bt-icon"><a href="./home/services"><?=$service;?></a></li>
-								<li class="bt-icon"><a href="./home/projects"><?=$example;?></a></li>
-								<li class="bt-icon"><a href="./home/teams"><?=$member;?></a></li>
-								<li class="bt-icon"><a href="./home/contacts"><?=$contact;?></a></li>
+								<li class="bt-icon"><a href="./services"><?=$service;?></a></li>
+								<li class="bt-icon"><a href="./projects"><?=$example;?></a></li>
+								<li class="bt-icon"><a href="./teams"><?=$member;?></a></li>
+								<li class="bt-icon"><a href="./contacts"><?=$contact;?></a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -72,49 +72,50 @@
 				<div class="grid_4">
 					<h2><?=$title1;?></h2>
 					<img src="../images/page2_img.jpg" alt="" class="img_inner">
-					<div class="text1 col2"><a href="#">Hom dui erosi laoru adipiscingq id risus sagittis, non consequat feiter milyno</a></div>
-					<p>In mollis erat mattisy neque facilisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus.</p>
-					Maecenas vehiculaegestas venenatis. Duiser massa elit, auctor pellentesque vel, aliquet amet erat. <br>
-					<a href="#" class="btn">more</a>
+					<div class="text1 col2"><a href="#">香港博雅教育咨询公司是UIC史上第一支由就读于世界名校的学长学姐组成的留学申请团队，是第一个真正属于UICer的留学互助联盟.</a></div>
+					<p>博雅教育团队成员均就读或毕业于UIC，熟知UIC的优势与特色，也了解UICer的申请亮点与需求。秉承UIC渊博雅正的教学理念，博雅教育专业从事英国、香港、澳洲、美国、加拿大、新加坡留学申请工作.</p>
+					凭借团队成员丰富的留学经验和出色的文书写作能力，博雅教育已经成为UICer出国读研的留学首选.<br>
+					<!-- <a href="#" class="btn">more</a> -->
 				</div>
 				<div class="grid_4">
 					<h2><?=$title2;?></h2>
 					<ul class="list1">
 						<li>
-							<time datetime="2014-01-01">1998 -</time>
-							<div class="extra_wrapper"><a href="#">Ger mollis erat mattisy equelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut</a></div>
+							<time datetime="2014-01-01">2013.6 </time>
+							<div class="extra_wrapper"><a href="#">香港博雅教育咨询公司在香港注册成立.</a></div>
 						</li>
 						<li>
-							<time datetime="2014-01-01">2001 -</time>
-							<div class="extra_wrapper">Iolmollis erat mtisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut velit. <a href="#"></a></div>
+							<time datetime="2014-01-01">2013.9 </time>
+							<div class="extra_wrapper"><a href="#">第一版网站上线,大量UICer线上咨询.同时博雅微信平台建立,每天向同学们推送最新留学信息.</a></div>
 						</li>
 						<li>
-							<time datetime="2014-01-01">2005 -</time>
-							<div class="extra_wrapper">Erat mattisy nequelisis, sit amet ultricieser erarutrum. Crasacilisis, nulla vel viverra auctor, leo magna sodales felis quis lesuada nibh odio ut velitoin pharetra <a href="#"></a></div>
+							<time datetime="2014-01-01">2013.11 </time>
+							<div class="extra_wrapper"><a href="#">由于日益增加的申请人数，博雅教育文案组从UIC各系吸收了优质的新鲜血液，以保证“一对一”文书写作的质量.</a></div>
 						</li>
 						<li>
-							<time datetime="2014-01-01">2008 -</time>
-							<div class="extra_wrapper"><a href="#">mattisy nequelisis, simet eryu ultricieser erarutrumracilisis, nulla vel viverra auctor, leo magna sodales felis quiser malesuada nibh odio ut oin</a></div>
+							<time datetime="2014-01-01">2013.12 </time>
+							<div class="extra_wrapper"><a href="#">经过一年的积累与沉淀，博雅教育根据申请者的特殊需求拓展了服务内容，增加了纯文书写作服务.</a></div>
 						</li>
 						<li>
-							<time datetime="2014-01-01">2013 -</time>
-							<div class="extra_wrapper"><a href="#">Mattisy nequelisis, sit amet ty ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut</a></div>
+							<time datetime="2014-01-01">2014.6 </time>
+							<div class="extra_wrapper"><a href="#">博雅从最初的一人肩负多职，到现在拥有分工明确、各司其职的运作体系，博雅教育不断发展并成熟着.</a></div>
+						</li>
+						<li>
+							<time datetime="2014-01-01">今天 </time>
+							<div class="extra_wrapper"><a href="#">从创立至今，博雅教育已经成功为UICer申请到美国加州大学洛杉矶分校(UCLA)、伦敦政治经济学院(LSE)、英国华威大学、约克大学、爱丁堡大学、香港大学、香港中文大学、澳洲国立大学、墨尔本大学、悉尼大学、美国范德堡大学、波士顿大学等众多世界知名学府。在未来的时间里，博雅教育愿为每一位莘莘学子敲开世界名校的大门。申请者的梦想不停止，我们的脚步也将一直跟随.</a></div>
 						</li>
 					</ul>
 				</div>
 				<div class="grid_4">
 					<h2><?=$title3;?></h2>
-					<div class="text1 col2"><a href="#">Hom dui erosi laoru adipiscingq id risus sagittis, non consequat feiter milyno</a></div>
-					<p>In mollis erat mattisy neque facilisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus</p>
-					Ggestas venenatis. Duis massa elit, auctor pellentesque vel, aliquet sit amet eratertolo. Phasellus accumsan justo vitae feugiat
+					<div class="text1 col2"><a href="#">博雅教育凭借“专业,负责,个性化”的服务宗旨,赢得了众多UIC学子及其家长的支持与信任.</a></div>
+					<div class="text1 col2"><p><a href="#">博雅教育: </a></p></div>
 					<ul class="list">
-						<li><a href="#">Proin pharetra luctus</a></li>
-						<li><a href="#">Diam, a scelerisque eros</a></li>
-						<li><a href="#">Maecenas vehicula egestas</a></li>
-						<li><a href="#"> Duis massa elit, auctor non</a></li>
-						<li><a href="#">Aliquet sit amet eraty</a></li>
+						<li><a href="#">注重品质</a></li>
+						<li><a href="#">注重信誉</a></li>
+						<li><a href="#">注重口碑</a></li>
 					</ul>
-					Demollis erat mattisy nequelisis, sit amet ultricieser erarutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis quis malesuada nibh odio ut velit. Proin pharetra luctusy.
+					我们的文书写作服务均由“一对一”文案组成员高效,优质地完成.每一位申请者的要求都是博雅努力的目标.我们深知现有的好口碑是脚踏实地换来的,我们既是留学前辈,也是你的朋友.博雅教育愿为每一位同学提供优质的留学申请服务,助你圆梦心中的理想学校!
 				</div>
 			</div>
 		</div>

@@ -99,7 +99,7 @@ ul {
 }
 
 ul.list {
-	padding-top: 18px;
+	padding-top: 0px;
 	margin-bottom: 46px;
 }
 
@@ -141,7 +141,7 @@ ul.list1 time {
 	font-weight: 600;
 	margin-top: 1px;
 	float: left;
-	width: 68px;
+	width: 79px;
 }
 
 /*links*/
@@ -274,7 +274,7 @@ h1 a {
 	display: inline-block;
 	overflow: hidden;
 	width: 162px;
-	height: 48px;
+	height: 69px;
 	text-indent: -999px;
 	transition: 0s ease;
 
@@ -284,6 +284,8 @@ h1 a {
 
 h1 a img {
 	display: block;	
+	margin: auto;
+    vertical-align:middle;
 }
 
 .slogan {

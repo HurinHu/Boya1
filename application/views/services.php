@@ -60,9 +60,9 @@
 								<li class="bt-icon"><a href="../"><?=$home;?></a></li>
 								<li class="bt-icon"><a href="../home/about"><?=$introduction;?></a></li>
 								<li class="current bt-icon"><a href="../home/services"><?=$service;?></a></li>
-								<li class="bt-icon"><a href="./home/projects"><?=$example;?></a></li>
-								<li class="bt-icon"><a href="./home/teams"><?=$member;?></a></li>
-								<li class="bt-icon"><a href="./home/contacts"><?=$contact;?></a></li>
+								<li class="bt-icon"><a href="../home/projects"><?=$example;?></a></li>
+								<li class="bt-icon"><a href="../home/teams"><?=$member;?></a></li>
+								<li class="bt-icon"><a href="../home/contacts"><?=$contact;?></a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>

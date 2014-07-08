@@ -198,7 +198,7 @@ class Home extends CI_Controller {
 				$data['lang']="zh";
 				$data['language']="<a href=\"#\" id=\"lang\" value=\"zh\">中文</a>";
 			}
-			$data['title']=$this->lang->line('title');
+		$data['title']=$this->lang->line('title');
 		$data['home']=$this->lang->line('home');
 		$data['introduction']=$this->lang->line('introduction');
 		$data['service']=$this->lang->line('service');
